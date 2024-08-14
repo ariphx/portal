@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - RSKIA SUKMA BUNDA</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: url('images/background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            overflow: hidden;
+            text-align: center;
+            position: relative;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes twinkle {
+            0%, 20%, 40%, 60%, 80%, 100% {
+                opacity: 0.2;
+            }
+            10%, 30%, 50%, 70%, 90% {
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            font-size: 3em;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            color: #fff;
+            margin: 0;
+            padding-bottom: 50px;
+            animation: fadeInDown 1.5s ease-out;
+        }
+
+        .button-group {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 100%;
+            overflow-x: auto;
+            animation: fadeInUp 1.5s ease-out;
+            animation-delay: 0.5s;
+            animation-fill-mode: both;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+            width: 160px;
+            height: 40px;
+            text-align: center;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+        }
+
+        .button:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .button:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .button.simgos {
+            background: linear-gradient(135deg, #00aaff, #0088cc);
+        }
+
+        .button.simrs {
+            background: linear-gradient(135deg, #f54242, #f65d35);
+        }
+
+        .button.eklaim {
+            background: linear-gradient(135deg, #f59842, #f2a43d);
+        }
+
+        .button.bpjs {
+            background: linear-gradient(135deg, #00c72c, #31cd33);
+        }
+
+        .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 20px;
+            color: #333;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .stars {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .star {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background-color: #006c93;
+            border-radius: 50%;
+            opacity: 0.8;
+            animation: twinkle 3s infinite;
+        }
+
+        .star:nth-child(2n) {
+            animation-duration: 3s;
+            animation-delay: 1s;
+        }
+
+        .star:nth-child(3n) {
+            animation-duration: 4s;
+            animation-delay: -1s;
+        }
+
+        .star:nth-child(4n) {
+            animation-duration: 5s;
+            animation-delay: -1s;
+        }
+
+        .star:nth-child(5n) {
+            animation-duration: 6s;
+            animation-delay: 1s;
+        }
+
+        .copyright {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 12px;
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+            opacity: 0.7;        
+        }
+    </style>
+</head>
+<body>
+    <div class="stars">
+        <div class="star" style="top: 20%; left: 10%;"></div>
+        <div class="star" style="top: 40%; left: 20%;"></div>
+        <div class="star" style="top: 60%; left: 15%;"></div>
+        <div class="star" style="top: 30%; left: 25%;"></div>
+        <div class="star" style="top: 50%; left: 30%;"></div>
+        <div class="star" style="top: 70%; left: 40%;"></div>
+        <div class="star" style="top: 10%; left: 35%;"></div>
+        <div class="star" style="top: 80%; left: 20%;"></div>
+        <div class="star" style="top: 90%; left: 5%;"></div>
+    </div>
+
+    <h1>PORTAL WEBSITE RSKIA SUKMA BUNDA</h1>
+    <div class="button-group">
+        <a href="http://192.168.1.4/apps/SIMpel/#welcome" class="button simgos" target="_blank">
+            <span class="icon"><img src="images/simgos.png" alt="SIMGOS Icon"></span> SIMGOS
+        </a>
+        <a href="http://192.168.1.100/simrs_os_sb/" class="button simrs" target="_blank">
+            <span class="icon"><img src="images/simrs.png" alt="SIMRS Icon"></span> SIMRS
+        </a>
+        <a href="http://192.168.1.77/E-Klaim" class="button eklaim" target="_blank">
+            <span class="icon"><img src="images/eklaim.ico" alt="E-Klaim Icon"></span> E-KLAIM
+        </a>
+        <a href="https://antrean.bpjs-kesehatan.go.id/antrean-rs/#/access/signin" class="button bpjs" target="_blank">
+            <span class="icon"><img src="images/bpjs.ico" alt="Antrean BPJS Icon"></span> ANTREAN BPJS
+        </a>
+    </div>
+    
+    <div class="copyright"><i>© Copyright IT RSKIA Sukma Bunda 2024</i></div>
+</body>
+</html>
+
